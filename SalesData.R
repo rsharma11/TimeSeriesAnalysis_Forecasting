@@ -17,3 +17,6 @@ plot(counts, xlab = "Week", ylab = "Customer count")
 monthplot(counts, labels = 1:12, xlab = "Bidaily Units")
 
 seasonplot(counts, season.labels = F, xlab = "")
+
+#Model forecast
+plot(forecast(auto.arima(counts)))
